@@ -4,3 +4,46 @@
   padding: 2rem;
   text-align: center;
 }
+
+.App {
+  text-align: center;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 5px;
+  margin: 20px auto;
+  max-width: 300px;
+}
+
+.cell {
+  width: 48px;
+  height: 48px;
+  background-color: lightgrey;
+  display: flex;
+  border: 2px solid lightgrey;
+  border-radius: 3px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.cell.clicked {
+  background-color: white;
+}
+
+.attempts {
+  margin: 20px;
+}
+
+.reset-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #fff;
+  border-radius: 7px;
+  cursor: pointer;
+}
